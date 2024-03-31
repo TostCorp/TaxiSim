@@ -1,0 +1,81 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34607.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiSim.Api", "src\TaxiSim.Api\TaxiSim.Api.csproj", "{1E9E4B59-1424-4200-90A8-2935CC9DCD6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiSim.AppHost", "src\TaxiSim.AppHost\TaxiSim.AppHost.csproj", "{23AAE2CD-8FE2-455B-B7AB-EE0737EFD287}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiSim.ServiceDefaults", "src\TaxiSim.ServiceDefaults\TaxiSim.ServiceDefaults.csproj", "{783B61EE-6D54-4475-9929-86F51BDD7D63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{54FABC8B-0478-4AA8-A5E4-0A0110C98F2C}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{329F9E53-AA68-464E-B6AF-2E1E4B775131}"
+	ProjectSection(SolutionItems) = preProject
+		tests\Directory.Build.props = tests\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiSim.Api.Tests", "tests\TaxiSim.Api.Tests\TaxiSim.Api.Tests.csproj", "{F740BC9D-4407-4755-A754-377E4E75855F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A8BF7304-D4C2-4E98-AB40-9BAA28636737}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiSim.Database", "src\TaxiSim.Database\TaxiSim.Database.csproj", "{272F87B9-4911-4D51-827E-75B5C1810239}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{0EC24160-EE21-4810-B59A-CD16E1E366EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{E73007B9-3DD1-4E2B-9BD3-A258DBC1A0A1}"
+	ProjectSection(SolutionItems) = preProject
+		pr-closed.yml = pr-closed.yml
+		pr-new.yml = pr-new.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E9E4B59-1424-4200-90A8-2935CC9DCD6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E9E4B59-1424-4200-90A8-2935CC9DCD6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E9E4B59-1424-4200-90A8-2935CC9DCD6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E9E4B59-1424-4200-90A8-2935CC9DCD6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23AAE2CD-8FE2-455B-B7AB-EE0737EFD287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23AAE2CD-8FE2-455B-B7AB-EE0737EFD287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23AAE2CD-8FE2-455B-B7AB-EE0737EFD287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23AAE2CD-8FE2-455B-B7AB-EE0737EFD287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{783B61EE-6D54-4475-9929-86F51BDD7D63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{783B61EE-6D54-4475-9929-86F51BDD7D63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{783B61EE-6D54-4475-9929-86F51BDD7D63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{783B61EE-6D54-4475-9929-86F51BDD7D63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F740BC9D-4407-4755-A754-377E4E75855F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F740BC9D-4407-4755-A754-377E4E75855F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F740BC9D-4407-4755-A754-377E4E75855F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F740BC9D-4407-4755-A754-377E4E75855F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{272F87B9-4911-4D51-827E-75B5C1810239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{272F87B9-4911-4D51-827E-75B5C1810239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{272F87B9-4911-4D51-827E-75B5C1810239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{272F87B9-4911-4D51-827E-75B5C1810239}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1E9E4B59-1424-4200-90A8-2935CC9DCD6E} = {A8BF7304-D4C2-4E98-AB40-9BAA28636737}
+		{23AAE2CD-8FE2-455B-B7AB-EE0737EFD287} = {A8BF7304-D4C2-4E98-AB40-9BAA28636737}
+		{783B61EE-6D54-4475-9929-86F51BDD7D63} = {A8BF7304-D4C2-4E98-AB40-9BAA28636737}
+		{F740BC9D-4407-4755-A754-377E4E75855F} = {329F9E53-AA68-464E-B6AF-2E1E4B775131}
+		{272F87B9-4911-4D51-827E-75B5C1810239} = {A8BF7304-D4C2-4E98-AB40-9BAA28636737}
+		{0EC24160-EE21-4810-B59A-CD16E1E366EA} = {54FABC8B-0478-4AA8-A5E4-0A0110C98F2C}
+		{E73007B9-3DD1-4E2B-9BD3-A258DBC1A0A1} = {0EC24160-EE21-4810-B59A-CD16E1E366EA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14E623A2-D87E-4188-9971-4ACA7D9242AD}
+	EndGlobalSection
+EndGlobal

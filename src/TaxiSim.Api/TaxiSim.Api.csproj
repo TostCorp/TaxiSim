@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+	
+  <PropertyGroup>
+    <UserSecretsId>5c3b4a9c-5009-4d8f-b01a-e19b0ee2406e</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0-preview.2.24162.2" />
+    <PackageReference Include="Aspire.RabbitMQ.Client" Version="9.0.0-preview.2.24162.2" />
+	<PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.11.0" />
+    <PackageReference Include="OneOf" Version="3.0.263" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	<PackageReference Include="TostCorp.ObjectResults" Version="1.0.1" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\TaxiSim.Database\TaxiSim.Database.csproj" />
+    <ProjectReference Include="..\TaxiSim.ServiceDefaults\TaxiSim.ServiceDefaults.csproj" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <Using Include="OneOf" />
+  </ItemGroup>
+	
+</Project>

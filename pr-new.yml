@@ -1,0 +1,14 @@
+name: Push new .NET PR
+
+on:
+  workflow_dispatch:
+
+  pull_request:
+    types: [ "opened", "synchronize", "reopened" ]
+    branches: [ "main" ]
+
+jobs:
+  ci-cd:
+    permissions:
+      security-events: write
+    uses: TostCorp/.github/jobs/pr-new-asp-net-app.yml
