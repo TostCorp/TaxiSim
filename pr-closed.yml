@@ -11,4 +11,4 @@ jobs:
   ci-cd:
     permissions:
       security-events: write
-    uses: TostCorp/.github/jobs/pr-closed-asp-net-app.yml
+    uses: TostCorp/.github/workflows/jobs/pr-closed-asp-net-app.yml
