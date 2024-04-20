@@ -32,11 +32,11 @@ public static class Program
             static x => x.ConnectionString = Environment.GetEnvironmentVariable($"ConnectionStrings__{DatabaseNames.TaxiSimDatabase}"),
             static x =>
             {
-                x.AddInterceptors(new SoftDeleteInterceptor(), new AddOrModifyInterceptor());
+                x.AddInterceptors(new SoftDeleteInterceptor(), new AddOrModifyInterceptor(), new ConcurrentInterceptor());
                 x.UseSqlServer(p => p.UseNetTopologySuite().UseAzureSqlDefaults());
             });
 
-        builder.AddRabbitMQ(ConnectionStrings.RabbitMq);
+        builder.AddRabbitMQClient(ConnectionStrings.RabbitMq);
 
         await using var app = builder.Build();
 

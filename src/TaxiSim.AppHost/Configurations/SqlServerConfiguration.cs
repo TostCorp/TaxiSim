@@ -8,6 +8,5 @@ public class SqlServerConfiguration : IDockerContainerInformationConfiguration, 
     public required string Tag { get; init; }
     public required int? Port { get; init; }
     public required string? Registry { get; init; }
-    public required string? Password { get; init; }
     public required string? DatabaseName { get; init; }
 }

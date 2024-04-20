@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
 using System.Reflection;
+using System.Reflection.Metadata.Ecma335;
 
 using TaxiSim.ServiceDefaults.Attributes;
 
@@ -44,7 +45,25 @@ public static class DependencyInjectionExtensions
 
             foreach (var @interface in interfaces)
             {
-                services.Add(new(@interface, implementation, lifetime));
+                if (implementation is { IsGenericType: true } && @interface is { IsGenericType: true })
+                {
+                    services.Add(new(@interface.GetGenericTypeDefinition(), implementation.GetGenericTypeDefinition(), lifetime));
+                }
+
+                if (implementation is { IsGenericType: false } && @interface is { IsGenericType: true })
+                {
+                    services.Add(new(@interface.GetGenericTypeDefinition(), implementation, lifetime));
+                }
+
+                if (implementation is { IsGenericType: true } && @interface is { IsGenericType: false })
+                {
+                    services.Add(new(@interface, implementation.GetGenericTypeDefinition(), lifetime));
+                }
+
+                if (implementation is { IsGenericType: false } && @interface is { IsGenericType: false })
+                {
+                    services.Add(new(@interface, implementation, lifetime));
+                }
             }
         }
 

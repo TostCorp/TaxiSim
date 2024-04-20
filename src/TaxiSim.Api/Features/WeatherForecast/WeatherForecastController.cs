@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 
 using TaxiSim.Api.Features.WeatherForecast.Models;
 using TaxiSim.Api.SharedContext;
-using TaxiSim.Database;
 
 namespace TaxiSim.Api.Features.WeatherForecast;
 
